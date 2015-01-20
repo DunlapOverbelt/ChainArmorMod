@@ -1,0 +1,16 @@
+[
+{
+  "modid": "chainarmormod",
+  "name": "Chain Armor Mod",
+  "description": "Craft Chain Armor using Chainmail, crafted from iron rings, which are crafted from iron nuggets, which are crafted from iron ingots",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Dunlap_Overbelt"],
+  "credits": "",
+  "logoFile": "/chainarmormod.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]

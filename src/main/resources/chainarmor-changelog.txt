@@ -1,0 +1,28 @@
+//version 0.0.7
+// changed ChainArmor name to ChainArmorMod
+// changed Iron Rings recipe to be 4 iron nuggets in a circle make 8 iron rings
+// made changes to allow iron nuggets to be moved to a core mod.
+
+
+//version 0.0.6
+// changed Chain Armor Items creative inventory tab icon to chainmail chestplate icon
+
+//version 0.0.5
+// removed imports for classes not used in the mod.
+// simplified item names removing redundant "chainArmor" names
+// removed setMaxStackSize(63) from Iron Ring item
+
+//version 0.0.4
+// updated @Mod with dependencies
+
+// version 0.0.3
+// created Chainmail Items tab for creative mode inventory
+// created custom mcmod.info file and logo
+// updated ChainArmorItem class with maxStackSize, creativeTab, and default localized name
+
+// version 0.0.2
+// created item textures and en_US.lang assets for iron nuggets, iron rings, and chainmail items
+
+// version 0.0.1
+// created iron nuggets, iron rings and chainmail items
+// added recipes to create iron nuggets, iron rings, and chainmail items

@@ -1,0 +1,9 @@
+language.name=English
+language.region=US
+language.code=en_US
+
+item.chainmail.name=Chainmail
+item.iron_nugget.name=Iron Nugget
+item.iron_ring.name=Iron Ring
+
+itemGroup.tabChainArmorItems=Chain Armor Items
