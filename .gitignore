@@ -1,0 +1,23 @@
+# Ignore gradle stuff
+build
+.gradle
+
+# Ignore eclipse stuff
+.classpath
+.project
+.settings
+bin
+eclipse
+
+# Ignore run location
+run
+
+# Ignore intellij stuff
+.idea
+out
+*.iml
+*.iws
+*.ipr
+
+# Ignore .bat files
+*.bat

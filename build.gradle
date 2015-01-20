@@ -1,0 +1,66 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+            }
+        maven {
+            name = "sonatype"
+            url = "https://oss.sonatype.org/content/repositories/snapshots/"
+            }
+        }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
+       }
+    }
+
+apply plugin: 'forge'
+
+sourceSets {
+  main {
+    java      { srcDirs = ["$projectDir/src/main/java"] }
+    resources { srcDirs = ["$projectDir/src/main/resources"] }
+  }
+}
+
+// stuff specific to my mod
+version = "0.0.7"
+group= "com.github.dunlapoverbelt"
+archivesBaseName = "ChainArmorMod-1.7.10"
+
+
+minecraft {
+    version = "1.7.10-10.13.2.1230"
+    runDir = "eclipse"
+
+    // replacing in Mod class
+    replace "@CHANGE_VERSION@", "[0.0,)"
+    replace "@MC_VERSION@", project.minecraft.version
+    replace "@VERSION@", project.version
+    replaceIn "ChainArmor.java"
+    }
+
+dependencies {
+    }
+
+processResources
+{
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    
+    from(sourceSets.main.resources.srcDirs)
+       {
+        include 'mcmod.info'
+        // replace version and mcversion
+        expand 'version':project.version, 'mcversion':project.minecraft.version 
+       }
+
+    from(sourceSets.main.resources.srcDirs)
+       {
+        exclude 'mcmod.info'
+       }
+}
+
+
+
