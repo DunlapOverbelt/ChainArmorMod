@@ -1,6 +1,7 @@
 # Ignore gradle stuff
 build
 .gradle
+gradle
 
 # Ignore eclipse stuff
 .classpath
