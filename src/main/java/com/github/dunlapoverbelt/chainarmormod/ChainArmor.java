@@ -91,8 +91,9 @@ public class ChainArmor
 	        
 	        //Craft 9 Iron Nuggets from Iron Ingot
 	        GameRegistry.addShapelessRecipe(new ItemStack(ChainArmor.iron_nugget, 9), new ItemStack(Items.iron_ingot));
-	        //Craft 2 Iron rings from Iron Nugget
-	        GameRegistry.addShapelessRecipe(new ItemStack(ChainArmor.iron_ring, 2), new ItemStack(ChainArmor.iron_nugget));
+	        //Craft 8 Iron rings from 4 Iron Nugget
+	        GameRegistry.addShapedRecipe(new ItemStack(ChainArmor.iron_ring, 8), " x ", "x x", " x ",
+	        		"x", iron_nuggetStack);
 	        //Craft Iron Ingot from 9 Iron Nuggets
 	        GameRegistry.addRecipe(new ItemStack(Items.iron_ingot), "xxx", "xxx", "xxx",
                     'x', iron_nuggetStack);
