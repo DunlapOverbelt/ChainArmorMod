@@ -25,9 +25,9 @@ sourceSets {
 }
 
 // stuff specific to my mod
-version = "0.0.7"
+version = "1.7.10-0.0.7"
 group= "com.github.dunlapoverbelt"
-archivesBaseName = "ChainArmorMod-1.7.10"
+archivesBaseName = "ChainArmorMod"
 
 
 minecraft {
